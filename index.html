@@ -38,7 +38,9 @@
       }
 
       var ver = getCookie('version') || 'develop',
-          url = 'https://rawgit.com/showdownjs/showdown/' + ver + '/dist/showdown.min.js',
+          // url = 'https://rawgit.com/showdownjs/showdown/' + ver + '/dist/showdown.min.js',
+          //hardcoded because of api portal version
+          url = 'https://rawgit.com/showdownjs/showdown/1.6.4/dist/showdown.min.js',
           scrp = document.createElement('script');
 
       scrp.setAttribute("type","text/javascript");

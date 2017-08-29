@@ -1,42 +1,31 @@
-Trying to add codemirror for syntax higlight for markdown
+![](https://gist.githubusercontent.com/vidhya03/efbfcb973f8997c16e73f6fb8b246942/raw/23a868e9e37f59a72403516d76e993fae7152aae/02-petstore-api-with-txt.jpg)
 
-![Showdown][sd-logo]
+The Dingo API package is meant to provide you, the developer, with a set of tools to help you easily and quickly build your own API. While the goal of this package is to remain as flexible as possible it still won't cover all situations and solve all problems.
+##Access via
+ OAuth![OAuth](https://gist.githubusercontent.com/vidhya03/efbfcb973f8997c16e73f6fb8b246942/raw/92721ab04221ad39905986208cec3049a0a18132/01-oauth-small-76x76.png)
+ APIKey![APIKey](https://gist.githubusercontent.com/vidhya03/efbfcb973f8997c16e73f6fb8b246942/raw/a50b77c7ce972a48c334dc43fc9f2a3476dbcd43/01-key-74x76.png)
 
-Showdown is a Javascript Markdown to HTML converter, based on the original works by John Gruber. It can be used client side (in the browser) or server side (with Node or io). 
+## Features
 
+This package provides tools for the following, and more:
 
-# Installation
+- Content Negotiation
+- Multiple Authentication Adapters
+- API Versioning
+- Rate Limiting
+- Response Transformers and Formatters
+- Error and Exception Handling
+- Internal Requests
+- API Blueprint Documentation
 
-## Download tarball
+## Documentation
 
-You can download the latest release tarball directly from [releases][releases]
+Please refer to our extensive [Wiki documentation](https://github.com/dingo/api/wiki) for more information.
 
-## Bower
+## Support
 
-    bower install showdown
+For answers you may not find in the Wiki, avoid posting issues. Feel free to ask for support on the dedicated [Slack](https://larachat.slack.com/messages/api/) room. Make sure to mention **@jasonlewis** so he is notified.
 
-## npm (server-side)
+## License
 
-    npm install showdown
-
-## CDN
-
-You can also use one of several CDNs available: 
-
-* rawgit CDN
-
-        https://cdn.rawgit.com/showdownjs/showdown/<version tag>/dist/showdown.min.js
-
-* cdnjs
-
-        https://cdnjs.cloudflare.com/ajax/libs/showdown/<version tag>/showdown.min.js
-
-
-[sd-logo]: https://raw.githubusercontent.com/showdownjs/logo/master/dist/logo.readme.png
-[releases]: https://github.com/showdownjs/showdown/releases
-[atx]: http://www.aaronsw.com/2002/atx/intro
-[setext]: https://en.wikipedia.org/wiki/Setext
-
----------
-
-# Syntax
+This package is licensed under the [BSD 3-Clause license](http://opensource.org/licenses/BSD-3-Clause).
