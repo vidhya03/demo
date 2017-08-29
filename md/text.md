@@ -29,3 +29,29 @@ For answers you may not find in the Wiki, avoid posting issues. Feel free to ask
 ## License
 
 This package is licensed under the [BSD 3-Clause license](http://opensource.org/licenses/BSD-3-Clause).
+## Sample code for Java client
+```java
+import java.io.IOException;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.UriBuilder;
+import org.apache.http.client.ClientProtocolException;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.api.client.config.ClientConfig;
+import com.sun.jersey.api.client.config.DefaultClientConfig;
+import com.sun.jersey.api.representation.Form;
+public class Test {
+ public static void main(String[] args) throws ClientProtocolException, IOException {
+  ClientConfig config = new DefaultClientConfig();
+  Client client = Client.create(config);
+  WebResource service = client.resource(UriBuilder.fromUri('http://restUrl').build());
+  Form form = new Form();
+  form.add('name1', 'value1');
+  form.add('name2', 'value1');
+  ClientResponse response = service.path('restPath').path('resourcePath').
+  type(MediaType.APPLICATION_FORM_URLENCODED).post(ClientResponse.class, form);
+  System.out.println('Response ' + response.getEntity(String.class));
+ }
+}
+```
